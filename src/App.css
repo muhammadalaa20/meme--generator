@@ -1,1 +1,57 @@
-/*# sourceMappingURL=App.css.map */
+.header {
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5rem 2.5rem/1fr 1fr;
+  grid-gap: 1.25rem;
+}
+.form .form--inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form .form--inputs div {
+  width: 50%;
+}
+.form .form--inputs input {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form .form--button {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 0.25rem;
+  background: #672280;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .header .header--title {
+    display: none;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .form--inputs {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .form .form--inputs div {
+    width: 100%;
+  }
+  .form .form--inputs input {
+    width: 100%;
+  }
+}/*# sourceMappingURL=App.css.map */
